@@ -1,3 +1,5 @@
+# Kavindu Madulakshan © 2025 MP3 Renamer. All rights reserved.
+
 import base64
 import hashlib
 import hmac
