@@ -38,5 +38,5 @@ This Python script automatically identifies MP3 files using the [ACRCloud API](h
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/mp3-renamer.git
+git clone https://github.com/Kav36/mp3-renamer.git
 cd mp3-renamer
