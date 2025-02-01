@@ -1,15 +1,16 @@
 # MP3 Song Renamer with ACRCloud API
 
-This Python script automatically identifies MP3 files using the [ACRCloud API](https://www.acrcloud.com/) and renames them based on the identified song title. It also organizes songs into separate folders for recognized and unrecognized tracks.
+This Python script **automatically identifies MP3 files** using the [ACRCloud API](https://www.acrcloud.com/) and renames them based on the identified song title. The script also organizes songs into separate folders for recognized and unrecognized tracks, making it easier to manage your music library.
 
 ---
 
 ## Features
-- Identifies songs by sending audio samples to the ACRCloud API.
-- Renames MP3 files based on the identified song title.
-- Removes metadata from renamed MP3 files.
-- Handles corrupt or unrecognizable MP3 files by attempting re-encoding.
-- Organizes files into:
+
+- 🔍 **Identifies songs** by sending audio samples to the ACRCloud API.
+- 📝 **Renames MP3 files** based on the identified song title.
+- 🚫 **Removes metadata** from renamed MP3 files.
+- ⚙️ Handles **corrupt or unrecognizable MP3 files** by attempting re-encoding.
+- 🗂️ **Organizes files** into two folders:
   - `renamed_songs`: For successfully identified and renamed songs.
   - `unreg_songs`: For songs that could not be identified.
 
@@ -18,25 +19,25 @@ This Python script automatically identifies MP3 files using the [ACRCloud API](h
 ## Prerequisites
 
 ### Python
-- Python 3.8 or higher.
+- **Python 3.8** or higher is required.
 
 ### ACRCloud API
-- A valid [ACRCloud API](https://www.acrcloud.com/) account to obtain:
+- You need a valid [ACRCloud API](https://www.acrcloud.com/) account to obtain:
   - `access_key`
   - `access_secret`
   - `requrl` (host URL).
 
 ### FFmpeg
-- `ffmpeg` installed on your system:
-  - Download it from [FFmpeg.org](https://ffmpeg.org/download.html).
-  - Follow the installation instructions for your operating system.
-  - Add the `ffmpeg` binary to your system's PATH.
+- You must have **FFmpeg** installed on your system:
+  - Download from [FFmpeg.org](https://ffmpeg.org/download.html).
+  - Follow the installation instructions based on your OS.
+  - Make sure to **add FFmpeg to your system's PATH**.
 
 ---
 
 ## Installation
 
 ### 1. Clone the Repository
+Start by cloning the repository to your local machine:
 ```bash
 git clone https://github.com/Kav36/mp3-renamer.git
-cd mp3-renamer
